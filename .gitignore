@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.worktrees/
+.DS_Store
+.env*
+*.sqlite*
+*.db
+coverage/
