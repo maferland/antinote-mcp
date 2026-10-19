@@ -32,6 +32,6 @@ export async function dispatch(action: Action, value: string, open: OpenURL = op
   await open(actionURL(action, value));
   return {
     status: 'dispatched', action,
-    message: 'Sent to Antinote. Completion is not confirmed by the URL interface. Your database snapshot is unchanged; refresh it to read the result.',
+    message: 'Sent to Antinote. Completion is not confirmed by the URL interface. Live reads can see saved changes; copied snapshots must be refreshed.',
   };
 }
